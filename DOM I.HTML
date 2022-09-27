@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 300px;
+            width: 300px;
+            cursor: pointer;
+        }
+        #btn{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">Ring Bell</button>
+    <img src="https://miro.medium.com/max/1400/1*mdcu3Ku9r44HMtraHUqu5g.jpeg" alt="Error" id="image">
+    <button id="btnn" onclick="quote()">Show Quote in console</button>
+    <p id="quote">Talk is cheap Show me the code</p>
+    <h1>This example demonstrates how we can change text content when clicking on button</h1>
+  <hr>
+  <h1 id="display">Click on Login to continue</h1>
+  <button onClick="login()">Login</button>
+  <button onClick="logout()">Logout</button>
+  <h1>Masai School Application</h1>
+  <p>Enter Your name and gender to apply for masai school</p>
+  <h2 id="display1">Display entered name and gender here</h2>
+  <hr>
+  <input type="text" id ="nam" placeholder="Enter your name">
+  <select id="gender">
+    <option value="Male">Male</option>
+    <option value="Female">Male</option>
+  </select>
+  <button id="bt">Apply</button>
+</body>
+</html>
+<script>
+    document.getElementById("btn").addEventListener("click",myfun);
+    document.getElementById("image").addEventListener("click",myimg);
+    document.getElementById("bt").addEventListener("click",mybt)
+    let pTag=document.getElementById("quote");
+    let h1=document.getElementById("display");
+    let show=document.getElementById("display1");
+    let name=document.getElementById("nam").value;
+   let entergender= document.getElementById("gender").value;
+    function quote(){
+        console.log(pTag.innerText)
+    }
+    function myfun(){
+        console.log("please open the door");
+    }
+    function myimg(){
+        alert("The website you are going to visit may harm your computer, do you still want to redirect?")
+    }
+   function login(){
+    h1.innerText="Login Success"
+   }
+   function logout(){
+    h1.innerText="Logout Success"
+   }
+   function mybt(){
+    show.innerText=name+"and"+entergender;
+   }
+</script>
