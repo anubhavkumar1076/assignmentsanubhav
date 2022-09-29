@@ -1,0 +1,49 @@
+body{
+    background:linear-gradient(to left,lightblue,purple);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#navbar{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  color: white;
+}
+#photo{
+    height: 30px;
+    width: 100px;
+    margin-left: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#photo>img{
+    height: 30px;
+    width: 100px;
+}
+#dabba{
+    height: 30px;
+    width: 420px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#dabba>div{
+    height: 30px;
+    width: 90px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+#dabba>div:hover{
+    background-color: black;
+    color:white;
+    font-weight: bold;
+}

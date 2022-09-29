@@ -37,6 +37,7 @@ input[type="text"],input[type="email"],select{
     border-style: none;
     font-size: 20px;
     font-weight: bold;
+    cursor: pointer;
     text-transform: capitalize;
 }
 h2{

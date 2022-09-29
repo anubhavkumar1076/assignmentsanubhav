@@ -1,7 +1,6 @@
 document.querySelector("form").addEventListener("submit",hire);
 let count=0;
 let salarycount=0;
-
 function hire(event){
     event.preventDefault();
     let entername=document.querySelector("#name").value;
@@ -61,5 +60,5 @@ function hire(event){
     document.querySelector("#email").value="";
     document.querySelector("#experience").value="";
     }   
-
+   
 }
