@@ -1,0 +1,31 @@
+#container{
+    margin: auto;
+    height: 500px;
+    width: 20%;
+    margin-top: 50px;
+}
+h1{
+    text-align: center;
+    text-transform: capitalize;
+}
+input[type="number"]{
+    height: 20px;
+    width: 100%;
+    margin-top: 6px;
+}
+#place{
+    padding-left: 10px;
+}
+#place1,#place2{
+    padding-left: 10px;
+}
+button{
+    margin-top: 10px;
+    height: 30px;
+    width: 80px;
+    background-color: gainsboro;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
